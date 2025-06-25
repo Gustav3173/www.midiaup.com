@@ -1,93 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Loja MidiaUp - Compra</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f0f2f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        header {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        .produto {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 320px;
-        }
-        .produto img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        .produto h2 {
-            margin: 0 0 10px 0;
-            color: #222;
-        }
-        .preco {
-            font-size: 24px;
-            color: #e91e63;
-            margin-bottom: 20px;
-        }
-        .btn-comprar {
-            background-color: #25d366;
-            border: none;
-            color: white;
-            padding: 15px 25px;
-            font-size: 18px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .btn-comprar:hover {
-            background-color: #1ebe57;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>MidiaUp - Tabela de Serviços</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 180px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #ffc107, #00cfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 16px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin: 30px 0 10px;
+      border-left: 5px solid #25D366;
+      padding-left: 10px;
+      color: #25D366;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      background-color: rgba(255,255,255,0.03);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #25D366;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #1ea958;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+      color: #bbb;
+    }
+
+    @media screen and (max-width: 600px) {
+      .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>MidiaUp - Sua loja de seguidores e engajamento</h1>
-    </header>
 
-    <section class="produto">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Pacote de Seguidores" />
-        <h2>Pacote de 1000 Seguidores</h2>
-        <div class="preco">R$ 29,90</div>
-        <a
-          class="btn-comprar"
-          href="https://wa.me/5561991977127?text=Olá%2C%20quero%20comprar%20o%20pacote%20de%201000%20seguidores."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Comprar via WhatsApp
-        </a>
-    </section>
+  <div class="container">
+    <img src="logo2.png" alt="Logo MidiaUp" class="logo">
 
-    <footer>
-        &copy; 2025 MidiaUp. Todos os direitos reservados.
-    </footer>
+    <h1>✨ Tabela de Serviços MidiaUp ✨</h1>
+    <p class="subtitle">@midiiaup - Divulgação e engajamento via Instagram</p>
+
+    <div class="section-title">🎬 Divulgação de Perfis/Produtos</div>
+    <table>
+      <tr>
+        <th>Serviço</th>
+        <th>Preço</th>
+        <th>Ação</th>
+      </tr>
+      <tr>
+        <td>1 vídeo</td>
+        <td>R$ 15,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Olá!%20Quero%20o%20pacote%20de%201%20vídeo%20por%20R$15,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>3 vídeos</td>
+        <td>R$ 40,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Olá!%20Quero%20o%20pacote%20de%203%20vídeos%20por%20R$40,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>5 vídeos</td>
+        <td>R$ 60,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Olá!%20Quero%20o%20pacote%20de%205%20vídeos%20por%20R$60,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>+ Link clicável nos stories</td>
+        <td>R$ 5,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Gostaria%20de%20adicionar%20link%20clicável%20nos%20stories%20por%20R$5,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>+ Destaque por 7 dias</td>
+        <td>R$ 10,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Gostaria%20de%20destaque%20por%207%20dias%20-%20R$10,00">Comprar</a></td>
+      </tr>
+    </table>
+
+    <div class="section-title">🚀 Campanhas e Engajamento</div>
+    <table>
+      <tr>
+        <th>Pacote</th>
+        <th>Preço</th>
+        <th>Ação</th>
+      </tr>
+      <tr>
+        <td>1 dia (sem interação)</td>
+        <td>R$ 5,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Quero%20campanha%20de%201%20dia%20sem%20interação%20por%20R$5,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>3 dias (curtidas e views)</td>
+        <td>R$ 12,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Quero%20campanha%20de%203%20dias%20com%20curtidas%20e%20views%20-%20R$12,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>7 dias (engajamento leve)</td>
+        <td>R$ 25,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Quero%20campanha%20de%207%20dias%20com%20engajamento%20leve%20-%20R$25,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>15 dias (engajamento médio)</td>
+        <td>R$ 40,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Quero%20campanha%20de%2015%20dias%20com%20engajamento%20médio%20-%20R$40,00">Comprar</a></td>
+      </tr>
+      <tr>
+        <td>30 dias (engajamento total)</td>
+        <td>R$ 70,00</td>
+        <td><a class="button" href="https://wa.me/5561991977127?text=Quero%20campanha%20de%2030%20dias%20com%20engajamento%20total%20-%20R$70,00">Comprar</a></td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      ✅ Perfil real, engajamento genuíno <br>
+      ✅ Ideal para sorteios, collabs e crescimento orgânico <br><br>
+      📩 Chama no direct ou clique nos botões acima <br>
+      🔗 Instagram: <strong>@midiiaup</strong>
+    </div>
+  </div>
+
 </body>
 </html>
