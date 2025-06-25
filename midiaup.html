@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loja MidiaUp - Compra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .produto {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 320px;
+        }
+        .produto img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .produto h2 {
+            margin: 0 0 10px 0;
+            color: #222;
+        }
+        .preco {
+            font-size: 24px;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+        .btn-comprar {
+            background-color: #25d366;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-comprar:hover {
+            background-color: #1ebe57;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MidiaUp - Sua loja de seguidores e engajamento</h1>
+    </header>
+
+    <section class="produto">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Pacote de Seguidores" />
+        <h2>Pacote de 1000 Seguidores</h2>
+        <div class="preco">R$ 29,90</div>
+        <a
+          class="btn-comprar"
+          href="https://wa.me/5561991977127?text=Olá%2C%20quero%20comprar%20o%20pacote%20de%201000%20seguidores."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Comprar via WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        &copy; 2025 MidiaUp. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
